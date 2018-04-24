@@ -12,6 +12,7 @@ class TodoList extends React.Component {
         };
 
         this.addItem = this.addItem.bind(this);
+        this.removeItem = this.removeItem.bind(this);
     }
 
     addItem(event) {
@@ -36,7 +37,13 @@ class TodoList extends React.Component {
     };
 
     removeItem(key) {
+        const filteredItems = this.state.items.filter(function (item) {
+            return (item.key !== key);
+        });
 
+        this.setState ({
+            items: filteredItems
+        });
     };
 
     render() {
