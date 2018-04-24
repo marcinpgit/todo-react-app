@@ -35,17 +35,26 @@ class TodoList extends React.Component {
         event.preventDefault();
     };
 
+    removeItem(key) {
+
+    };
+
     render() {
         return (
             <div className='todoListMain'>
                 <div className='header'>
                     <form onSubmit={this.addItem}>
-                        <input ref={ (a) => this._inputElement = a }
-                               placeholder='enter task'/>
+                        <input
+                            ref={ (a) => this._inputElement = a }
+                            placeholder='enter task'
+                        />
                         <button type='submit'>add</button>
                     </form>
                 </div>
-                <TodoItems entries={this.state.items}/>
+                <TodoItems
+                    entries={this.state.items}
+                    remove={this.removeItem}
+                />
             </div>
         );
     }
