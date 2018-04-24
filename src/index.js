@@ -1,14 +1,14 @@
 import React from 'react';
-import reactDOM from 'react-dom';
+import ReactDOM from 'react-dom';
 
 import './index.css';
 import TodoList from './TodoList';
 
-const destination = document.getElementById('#container');
+const destination = document.querySelector('#container');
 
 ReactDOM.render(
-    <React.Fragment>
+    <div>
         <TodoList/>
-    </React.Fragment>,
+    </div>,
     destination
 );
