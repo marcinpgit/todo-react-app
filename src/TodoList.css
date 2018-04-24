@@ -28,8 +28,14 @@
     margin-bottom: 15px;
     border-radius: 5px;
     list-style: none;
+    transition: background-color 0.2s ease-out;
 }
 
 ul.theList {
     padding: 0;
+}
+
+.todoListMain .theList li:hover {
+    background-color: rgba(255, 0, 0, 0.6);
+    cursor: pointer;
 }
