@@ -1,11 +1,14 @@
 import React from 'react';
 import reactDOM from 'react-dom';
+
 import './index.css';
+import TodoList from './TodoList';
 
 const destination = document.getElementById('#container');
 
 ReactDOM.render(
-    <div>
-        <p>Hello World!</p>
-    </div>
+    <React.Fragment>
+        <TodoList/>
+    </React.Fragment>,
+    destination
 );
