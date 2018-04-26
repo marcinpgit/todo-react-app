@@ -4,3 +4,8 @@
 ### created with React.js
 
 A basic application that displays a list of todo's, provides adding and deleting task by user.
+
+### Author:
+Marcin Płużyński
+
+##### Created under free software MIT License.
